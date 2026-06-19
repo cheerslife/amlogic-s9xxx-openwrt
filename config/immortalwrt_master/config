@@ -887,3 +887,66 @@ CONFIG_PACKAGE_openssl-util=y
 CONFIG_PACKAGE_lua=y
 CONFIG_PACKAGE_shellsync=y
 CONFIG_PACKAGE_coremark=y
+#################################################
+# N1 HomeProxy Ultimate Override
+#################################################
+
+CONFIG_TARGET_ROOTFS_PARTSIZE=384
+
+# HomeProxy
+CONFIG_PACKAGE_luci-app-homeproxy=y
+CONFIG_PACKAGE_sing-box=y
+
+# Zabbix
+CONFIG_PACKAGE_zabbix-agentd=y
+
+# eMMC
+CONFIG_PACKAGE_parted=y
+CONFIG_PACKAGE_wipefs=y
+CONFIG_PACKAGE_losetup=y
+
+CONFIG_PACKAGE_e2fsprogs=y
+CONFIG_PACKAGE_e2fsprogs-mke2fs=y
+CONFIG_PACKAGE_e2fsprogs-fsck=y
+CONFIG_PACKAGE_e2fsprogs-resize2fs=y
+
+# TUN/TPROXY
+CONFIG_PACKAGE_kmod-tun=y
+CONFIG_PACKAGE_kmod-nf-tproxy=y
+CONFIG_PACKAGE_kmod-nft-tproxy=y
+CONFIG_PACKAGE_kmod-ipt-tproxy=y
+CONFIG_PACKAGE_ip-full=y
+
+# LuCI
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+
+#################################################
+# Remove unnecessary packages
+#################################################
+
+# CONFIG_PACKAGE_luci-theme-material is not set
+
+# CONFIG_PACKAGE_luci-app-frpc is not set
+# CONFIG_PACKAGE_luci-app-frps is not set
+
+# CONFIG_PACKAGE_luci-app-upnp is not set
+# CONFIG_PACKAGE_luci-app-vlmcsd is not set
+
+# CONFIG_PACKAGE_luci-proto-3g is not set
+# CONFIG_PACKAGE_luci-proto-batman-adv is not set
+# CONFIG_PACKAGE_luci-proto-ipip is not set
+# CONFIG_PACKAGE_luci-proto-ncm is not set
+# CONFIG_PACKAGE_luci-proto-openconnect is not set
+# CONFIG_PACKAGE_luci-proto-qmi is not set
+# CONFIG_PACKAGE_luci-proto-relay is not set
+
+# CONFIG_PACKAGE_qmi-utils is not set
+
+# CONFIG_PACKAGE_frpc is not set
+# CONFIG_PACKAGE_frps is not set
+
+# CONFIG_PACKAGE_kmod-wireguard is not set
+
+# CONFIG_PACKAGE_perl is not set
+
+# CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
